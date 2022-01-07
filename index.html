@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- prueba -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/package/dist/sweetalert2.css"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/package/dist/sweetalert2.min.css"
+    />
+
+    <title>CRUD Fetch</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mt-2">
+            <div class="card-header bg-dark">
+              <h4 class="text-center font-weight-bold text-white">
+                Registro de producto
+              </h4>
+            </div>
+            <div class="card-body">
+              <form action="" method="post" id="frm">
+                <div class="form-group">
+                  <label>Codigo</label>
+                  <input type="hidden" name="idp" id="idp" value="" />
+                  <input
+                    type="text"
+                    name="codigo"
+                    id="codigo"
+                    placeholder="Codigo"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Producto</label>
+                  <input
+                    type="text"
+                    name="producto"
+                    id="producto"
+                    placeholder="Descripcion"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Precio</label>
+                  <input
+                    type="text"
+                    name="precio"
+                    id="precio"
+                    placeholder="Precio"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Cantidad</label>
+                  <input
+                    type="text"
+                    name="cantidad"
+                    id="cantidad"
+                    placeholder="Cantidad"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-dark btn-block"
+                    value="Registrar"
+                    id="registrar"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-6 offset-6">
+              <form method="POST" action="">
+                <div class="form-group">
+                  <label for="buscar" class="font-weight-bold">Buscar:</label>
+                  <input
+                    type="text"
+                    name="buscar"
+                    id="buscar"
+                    class="form-control"
+                    placeholder="Buscar..."
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th>ID</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="resultado"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="package/dist/sweetalert2.js"></script>
+    <!-- prueba antes de subirlo -->
+    <script src="package/dist/sweetalert2.min.js"></script>
+    <script src="package/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  </body>
+</html>
